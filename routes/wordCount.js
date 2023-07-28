@@ -19,6 +19,7 @@ router.get('/', async function (req, res, next) {
         console.log('test log');
         console.log('test log');
         console.log('test log');
+        console.log('test log1');
         let qData = await middleware.getAll(WordCountModel, {});        
         res.send({ data: qData, status: 'Success' });
     } catch (error) {
